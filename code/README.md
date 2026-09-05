@@ -1,17 +1,24 @@
 # Analysis code
 
-This directory contains the analysis scripts used for the
-publication-aware perovskite solar-cell machine-learning benchmark.
+This directory contains the analysis scripts used for the publication-aware perovskite solar-cell machine-learning benchmark.
 
 The frozen cohort and validation assignments are provided in `../data/`.
 
-Core analysis:
-- `psc_baseline_validation.py`: baseline preprocessing, model fitting, and validation
-- `doi_balanced_weighting.py`: publication-balanced training analysis
+## Baseline and DOI-weighting analyses
 
-Verification:
-- `verify_results.py`
-- `verify_weighting_results.py`
+- `psc_baseline_validation.py` — feature construction, Elastic Net / Random Forest baselines, row-wise, DOI-grouped, and chronological validation
+- `doi_balanced_weighting.py` — tempered and full inverse-DOI sample weighting
+- `verify_results.py` — deterministic integrity checks for the baseline analysis
+- `verify_weighting_results.py` — deterministic integrity checks for the DOI-weighting analysis
 
-Additional CatBoost, uncertainty, explainability, and domain-reliability
-scripts will be added before the archived release.
+## CatBoost analyses
+
+The `catboost/` subdirectory contains the recovered scripts for:
+
+- CatBoost quantile uncertainty and supported-domain diagnostics;
+- held-out SHAP and ALE analyses;
+- hierarchical within-family attribution;
+- RF–CatBoost robustness comparison; and
+- preparation of final figure / Origin-ready source tables.
+
+See `catboost/README.md` for details and remaining external dependencies.
