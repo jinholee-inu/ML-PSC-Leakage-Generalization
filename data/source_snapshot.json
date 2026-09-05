@@ -1,0 +1,22 @@
+{
+  "source": "Perovskite Database Project",
+  "snapshot_date": "2022-03-31",
+  "raw_file_expected": "Perovskite_database_content_all_data.csv",
+  "raw_records": 42459,
+  "raw_columns": 410,
+  "raw_sha256": "9d30614b3a9228f2d66d4b09791e3210316fb717a17c11d3b70f18302ff074bb",
+  "raw_file_redistributed": false,
+  "final_cohort_records": 33175,
+  "normalized_doi_groups": 6368,
+  "final_cohort_index_sha256": "c8e637a7f6e2e47749642b313590377b0a6a4450f2a6519e04f1fbc9fc0f0bd6",
+  "chronological_training": {
+    "publication_year": "<=2018",
+    "records": 24059,
+    "doi_groups": 4633
+  },
+  "chronological_test": {
+    "publication_year": "2019-2021",
+    "records": 9116,
+    "doi_groups": 1735
+  }
+}

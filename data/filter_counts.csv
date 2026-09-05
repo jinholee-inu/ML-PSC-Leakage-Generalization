@@ -1,0 +1,6 @@
+filter_stage,records_retained,excluded_at_step
+Raw public records,42459,0
+Non-module n-i-p/p-i-n cells,42066,393
+"Complete, physically valid PV metrics",39653,2413
+"Traceable one-sun, scan-consistent records",33265,6388
+"Retraction-screened, exact-deduplicated cohort",33175,90
