@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "runtime_seconds": 28.4652890870002,
+  "software": {
+    "python": "3.12.13",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  },
+  "inputs": {
+    "raw_path": "/workspace/scratch/1d2940d5fcd3/work-shap-ale-package/PSC_SHAP_ALE_explainability_package/inputs/Perovskite_database_content_all_data.csv",
+    "raw_sha256": "9d30614b3a9228f2d66d4b09791e3210316fb717a17c11d3b70f18302ff074bb",
+    "cohort_path": "/workspace/scratch/1d2940d5fcd3/work-shap-ale-package/PSC_SHAP_ALE_explainability_package/inputs/final_cohort_index.csv",
+    "cohort_sha256": "c8e637a7f6e2e47749642b313590377b0a6a4450f2a6519e04f1fbc9fc0f0bd6",
+    "predictions_path": "/workspace/scratch/1d2940d5fcd3/outputs/psc-uncertainty-ood/uncertainty_ood_predictions.csv.gz",
+    "predictions_sha256": "ad8397c6995201dd8ccc088cf90e6a8a7eff00f6fa72b779a0bb01890fcb241e"
+  },
+  "design": {
+    "model_retrained": false,
+    "future_cohort": "2019-2021",
+    "paired_schemes": [
+      "DOI-grouped 5-fold",
+      "Chronological >2018"
+    ],
+    "primary_evaluation": "publication-balanced",
+    "OOD_threshold": 0.95,
+    "bootstrap_replicates": 1000,
+    "seed": 20260829,
+    "minimum_descriptive_DOI": 5,
+    "minimum_inferential_DOI": 20,
+    "A_site_definition": "presence pattern among FA, MA, and Cs across semicolon- and pipe-delimited layers",
+    "B_site_definition": "presence pattern among Pb and Sn across semicolon- and pipe-delimited layers"
+  },
+  "verification": {
+    "status": "passed",
+    "composition_assignment_rows": 33175,
+    "normalized_DOI_groups": 6368,
+    "historical_records": 24059,
+    "future_records": 9116,
+    "future_DOI": 1735,
+    "future_paired_prediction_rows": 72928,
+    "expected_future_paired_prediction_rows": 72928,
+    "duplicate_prediction_keys": 0,
+    "missing_composition_joins": 0,
+    "max_paired_y_true_difference": 0.0,
+    "feature_OOD_range": [
+      0.0014277662972008,
+      1.0
+    ],
+    "bootstrap_replicates": 1000,
+    "bootstrap_count_shape": [
+      1000,
+      1735
+    ],
+    "bootstrap_row_sums_valid": true,
+    "performance_CI_order_valid": true,
+    "A_fraction_parsed_fraction": 0.9970761115297664,
+    "B_fraction_parsed_fraction": 0.999035418236624,
+    "figure_files_present": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "checks": {
+    "assignment_row_count": true,
+    "normalized_DOI_count": true,
+    "historical_future_partition_counts": true,
+    "A_site_labels": true,
+    "B_site_labels": true,
+    "cross_domain_labels": true,
+    "historical_formula_novelty": true,
+    "future_prediction_row_count": true,
+    "prediction_key_uniqueness": true,
+    "source_archive_row_match": true,
+    "source_archive_numeric_match": true,
+    "paired_future_outcomes": true,
+    "performance_counts_recomputed": true,
+    "performance_metrics_recomputed": true,
+    "support_counts_recomputed": true,
+    "confidence_interval_order": true,
+    "source_hash_match": true,
+    "figure_files_present": true,
+    "primary_verification_passed": true
+  },
+  "details": {
+    "checks_passed": 19,
+    "checks_total": 19,
+    "assignment_rows": 33175,
+    "prediction_rows": 72928,
+    "maximum_archive_difference": 3.552713678800501e-15,
+    "archive_differences": {
+      "y_true": 0.0,
+      "y_pred": 3.552713678800501e-15,
+      "feature_ood_percentile": 0.0,
+      "model_ood_percentile": 0.0,
+      "interval_90_half_width": 3.552713678800501e-15,
+      "interval_95_half_width": 3.552713678800501e-15
+    },
+    "maximum_performance_metric_difference": 7.105427357601002e-15,
+    "maximum_performance_count_difference": 0,
+    "maximum_support_count_difference": 0,
+    "maximum_paired_y_true_difference": 0.0
+  }
+}

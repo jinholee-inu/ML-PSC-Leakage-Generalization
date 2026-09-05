@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "composition_assignment_rows": 33175,
+  "normalized_DOI_groups": 6368,
+  "historical_records": 24059,
+  "future_records": 9116,
+  "future_DOI": 1735,
+  "future_paired_prediction_rows": 72928,
+  "expected_future_paired_prediction_rows": 72928,
+  "duplicate_prediction_keys": 0,
+  "missing_composition_joins": 0,
+  "max_paired_y_true_difference": 0.0,
+  "feature_OOD_range": [
+    0.0014277662972008,
+    1.0
+  ],
+  "bootstrap_replicates": 1000,
+  "bootstrap_count_shape": [
+    1000,
+    1735
+  ],
+  "bootstrap_row_sums_valid": true,
+  "performance_CI_order_valid": true,
+  "A_fraction_parsed_fraction": 0.9970761115297664,
+  "B_fraction_parsed_fraction": 0.999035418236624,
+  "figure_files_present": true
+}
