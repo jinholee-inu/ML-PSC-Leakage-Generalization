@@ -14,21 +14,25 @@ ML-PSC-Leakage-Generalization/
 │   ├── catboost/
 │   └── reliability/
 │       ├── composition_domain/
-│       └── sn_subgroup/
+│       ├── sn_subgroup/
+│       └── mixed_pb_sn_warning/
 ├── config/
 ├── results/
 │   ├── catboost_recency/
 │   ├── composition_domain/
-│   └── sn_subgroup/
+│   ├── sn_subgroup/
+│   ├── uncertainty_rf/
+│   └── mixed_pb_sn_warning/
 └── uncertainty_rf/
 ```
 
 ## Recovered analysis chain
 
-The repository currently contains source code and frozen inputs/outputs for:
+The repository contains the recovered source code and frozen analysis inputs/outputs for:
 
 - baseline Elastic Net and Random-Forest validation;
-- publication-leakage analysis;
+- row-wise publication-leakage analysis;
+- DOI-grouped and chronological validation;
 - DOI-balanced sample weighting;
 - Random-Forest uncertainty and OOD analysis;
 - CatBoost point-model and temporal-recency analysis;
@@ -36,13 +40,17 @@ The repository currently contains source code and frozen inputs/outputs for:
 - held-out SHAP and ALE;
 - hierarchical within-family attribution;
 - RF–CatBoost robustness comparison;
-- locked composition-domain reliability analysis; and
-- Sn-only / mixed Pb–Sn subgroup calibration and mixture-of-experts analysis.
+- locked composition-domain reliability analysis;
+- Sn-only / mixed Pb–Sn subgroup calibration and mixture-of-experts analysis; and
+- the locked mixed Pb–Sn Green/Amber/Red warning-policy analysis.
 
-## Remaining reliability analysis
+## Reproducibility status
 
-The remaining manuscript-specific source package to add is the locked mixed Pb–Sn
-warning-policy analysis.
+The manuscript-specific scientific analysis chain has now been recovered.
 
-After that package is added, the repository can receive a final manuscript-to-code audit
-and be prepared for a versioned archival release / persistent DOI.
+Before the final archival release, the repository should receive one final manuscript-to-code
+and data-availability audit, any remaining compact result tables promised by the manuscript
+should be added, and a versioned release should be archived with a persistent DOI.
+
+The raw 31 March 2022 Perovskite Database snapshot is not redistributed here; provenance
+and checksums are provided under `data/`.
