@@ -13,11 +13,13 @@ ML-PSC-Leakage-Generalization/
 ├── code/
 │   ├── catboost/
 │   └── reliability/
-│       └── composition_domain/
+│       ├── composition_domain/
+│       └── sn_subgroup/
 ├── config/
 ├── results/
 │   ├── catboost_recency/
-│   └── composition_domain/
+│   ├── composition_domain/
+│   └── sn_subgroup/
 └── uncertainty_rf/
 ```
 
@@ -33,15 +35,14 @@ The repository currently contains source code and frozen inputs/outputs for:
 - CatBoost uncertainty;
 - held-out SHAP and ALE;
 - hierarchical within-family attribution;
-- RF–CatBoost robustness comparison; and
-- locked composition-domain reliability analysis.
+- RF–CatBoost robustness comparison;
+- locked composition-domain reliability analysis; and
+- Sn-only / mixed Pb–Sn subgroup calibration and mixture-of-experts analysis.
 
-## Remaining reliability analyses
+## Remaining reliability analysis
 
-The remaining manuscript-specific source packages to add are:
+The remaining manuscript-specific source package to add is the locked mixed Pb–Sn
+warning-policy analysis.
 
-1. Sn-only / mixed Pb–Sn subgroup calibration and mixture-of-experts analysis; and
-2. the mixed Pb–Sn warning-policy analysis.
-
-After those packages are added, the repository can be given a final manuscript-to-code audit
-and prepared for a versioned archival release / persistent DOI.
+After that package is added, the repository can receive a final manuscript-to-code audit
+and be prepared for a versioned archival release / persistent DOI.
