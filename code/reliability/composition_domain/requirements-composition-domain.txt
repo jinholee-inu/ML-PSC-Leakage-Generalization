@@ -1,0 +1,7 @@
+# Versions recorded in the archived composition-domain run manifest
+numpy==2.3.5
+pandas==2.2.3
+scikit-learn==1.8.0
+
+# Imported by the analysis script; exact archived version was not recorded
+matplotlib
