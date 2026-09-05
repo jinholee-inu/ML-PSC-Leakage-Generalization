@@ -1,0 +1,5 @@
+domain,period,records,DOI_groups,year_min,year_max
+Sn-only,Historical <=2018,389,83,2014,2018
+Sn-only,Future 2019-2021,155,30,2019,2020
+Mixed Pb-Sn,Historical <=2018,274,57,2014,2018
+Mixed Pb-Sn,Future 2019-2021,98,25,2019,2020

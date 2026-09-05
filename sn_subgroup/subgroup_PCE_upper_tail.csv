@@ -1,0 +1,21 @@
+domain,method,subset,threshold_PCE,records,DOI_groups,R2,MAE,RMSE,bias,inferential_status
+Sn-only,Frozen global,Historical publication-balanced PCE Q75,4.525467181052429,75,22,-3.5355478530419964,2.607265146911321,2.9932060662439004,-2.585000949446128,bootstrap-eligible
+Sn-only,Frozen global,Conventional PCE >=20%,20.0,0,0,,,,,descriptive only
+Sn-only,Subgroup calibrator,Historical publication-balanced PCE Q75,4.525467181052429,75,22,-3.5355478530419964,2.607265146911321,2.9932060662439004,-2.585000949446128,bootstrap-eligible
+Sn-only,Subgroup calibrator,Conventional PCE >=20%,20.0,0,0,,,,,descriptive only
+Sn-only,Domain expert,Historical publication-balanced PCE Q75,4.525467181052429,75,22,-4.204064093251605,2.875034348927515,3.206218076895869,-2.8706288222810667,bootstrap-eligible
+Sn-only,Domain expert,Conventional PCE >=20%,20.0,0,0,,,,,descriptive only
+Sn-only,Convex mixture,Historical publication-balanced PCE Q75,4.525467181052429,75,22,-3.5355478530419964,2.607265146911321,2.9932060662439004,-2.585000949446128,bootstrap-eligible
+Sn-only,Convex mixture,Conventional PCE >=20%,20.0,0,0,,,,,descriptive only
+Sn-only,Development-selected policy,Historical publication-balanced PCE Q75,4.525467181052429,75,22,-3.5355478530419964,2.607265146911321,2.9932060662439004,-2.585000949446128,bootstrap-eligible
+Sn-only,Development-selected policy,Conventional PCE >=20%,20.0,0,0,,,,,descriptive only
+Mixed Pb-Sn,Frozen global,Historical publication-balanced PCE Q75,12.990558974358986,56,21,-3.3014066719293567,4.150958274838014,4.705894654091644,-4.08543121623782,bootstrap-eligible
+Mixed Pb-Sn,Frozen global,Conventional PCE >=20%,20.0,2,2,-3052.778829861078,8.28598131134502,8.289150962063278,-8.28598131134502,descriptive only
+Mixed Pb-Sn,Subgroup calibrator,Historical publication-balanced PCE Q75,12.990558974358986,56,21,-3.3014066719293567,4.150958274838014,4.705894654091644,-4.08543121623782,bootstrap-eligible
+Mixed Pb-Sn,Subgroup calibrator,Conventional PCE >=20%,20.0,2,2,-3052.778829861078,8.28598131134502,8.289150962063278,-8.28598131134502,descriptive only
+Mixed Pb-Sn,Domain expert,Historical publication-balanced PCE Q75,12.990558974358986,56,21,-6.000513781114749,5.179149364014669,6.003463936165696,-5.179149364014669,bootstrap-eligible
+Mixed Pb-Sn,Domain expert,Conventional PCE >=20%,20.0,2,2,-5108.054661644589,10.595487955379543,10.721647722575286,-10.595487955379543,descriptive only
+Mixed Pb-Sn,Convex mixture,Historical publication-balanced PCE Q75,12.990558974358986,56,21,-3.3014066719293567,4.150958274838014,4.705894654091644,-4.08543121623782,bootstrap-eligible
+Mixed Pb-Sn,Convex mixture,Conventional PCE >=20%,20.0,2,2,-3052.778829861078,8.28598131134502,8.289150962063278,-8.28598131134502,descriptive only
+Mixed Pb-Sn,Development-selected policy,Historical publication-balanced PCE Q75,12.990558974358986,56,21,-3.3014066719293567,4.150958274838014,4.705894654091644,-4.08543121623782,bootstrap-eligible
+Mixed Pb-Sn,Development-selected policy,Conventional PCE >=20%,20.0,2,2,-3052.778829861078,8.28598131134502,8.289150962063278,-8.28598131134502,descriptive only

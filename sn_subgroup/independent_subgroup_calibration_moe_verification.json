@@ -1,0 +1,295 @@
+{
+  "status": "PASS",
+  "checks_passed": 22,
+  "checks_total": 22,
+  "checks": [
+    {
+      "check": "required outputs exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "prediction row count",
+      "passed": true,
+      "detail": 5060
+    },
+    {
+      "check": "prediction key uniqueness",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "target set",
+      "passed": true,
+      "detail": [
+        "FF",
+        "Jsc",
+        "PCE",
+        "Voc"
+      ]
+    },
+    {
+      "check": "method set",
+      "passed": true,
+      "detail": [
+        "Convex mixture",
+        "Development-selected policy",
+        "Domain expert",
+        "Frozen global",
+        "Subgroup calibrator"
+      ]
+    },
+    {
+      "check": "domain set",
+      "passed": true,
+      "detail": [
+        "Mixed Pb-Sn",
+        "Sn-only"
+      ]
+    },
+    {
+      "check": "subgroup support counts",
+      "passed": true,
+      "detail": {
+        "Sn-only | Historical <=2018": [
+          389,
+          83
+        ],
+        "Sn-only | Future 2019-2021": [
+          155,
+          30
+        ],
+        "Mixed Pb-Sn | Historical <=2018": [
+          274,
+          57
+        ],
+        "Mixed Pb-Sn | Future 2019-2021": [
+          98,
+          25
+        ]
+      }
+    },
+    {
+      "check": "paired record sets",
+      "passed": true,
+      "detail": "all methods share exact future Ref_ID sets"
+    },
+    {
+      "check": "frozen prediction identity",
+      "passed": true,
+      "detail": 3.552713678800501e-15
+    },
+    {
+      "check": "outcome identity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "check": "historical-future DOI separation",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "one-SE calibrator selection",
+      "passed": true,
+      "detail": [
+        {
+          "domain": "Sn-only",
+          "target": "PCE",
+          "candidate": "Identity"
+        },
+        {
+          "domain": "Sn-only",
+          "target": "Voc",
+          "candidate": "Identity"
+        },
+        {
+          "domain": "Sn-only",
+          "target": "Jsc",
+          "candidate": "Identity"
+        },
+        {
+          "domain": "Sn-only",
+          "target": "FF",
+          "candidate": "Identity"
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "PCE",
+          "candidate": "Identity"
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "Voc",
+          "candidate": "Identity"
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "Jsc",
+          "candidate": "Identity"
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "FF",
+          "candidate": "Identity"
+        }
+      ]
+    },
+    {
+      "check": "one-SE mixture shrinkage",
+      "passed": true,
+      "detail": [
+        {
+          "domain": "Sn-only",
+          "target": "PCE",
+          "alpha": 0.0
+        },
+        {
+          "domain": "Sn-only",
+          "target": "Voc",
+          "alpha": 0.0
+        },
+        {
+          "domain": "Sn-only",
+          "target": "Jsc",
+          "alpha": 0.0
+        },
+        {
+          "domain": "Sn-only",
+          "target": "FF",
+          "alpha": 0.0
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "PCE",
+          "alpha": 0.0
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "Voc",
+          "alpha": 0.0
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "Jsc",
+          "alpha": 0.0
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "FF",
+          "alpha": 0.0
+        }
+      ]
+    },
+    {
+      "check": "development policy selection",
+      "passed": true,
+      "detail": [
+        {
+          "domain": "Sn-only",
+          "target": "PCE",
+          "candidate": "Frozen global"
+        },
+        {
+          "domain": "Sn-only",
+          "target": "Voc",
+          "candidate": "Frozen global"
+        },
+        {
+          "domain": "Sn-only",
+          "target": "Jsc",
+          "candidate": "Frozen global"
+        },
+        {
+          "domain": "Sn-only",
+          "target": "FF",
+          "candidate": "Frozen global"
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "PCE",
+          "candidate": "Frozen global"
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "Voc",
+          "candidate": "Frozen global"
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "Jsc",
+          "candidate": "Frozen global"
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "target": "FF",
+          "candidate": "Frozen global"
+        }
+      ]
+    },
+    {
+      "check": "metric recomputation",
+      "passed": true,
+      "detail": 1.7763568394002505e-15
+    },
+    {
+      "check": "metric confidence interval ordering",
+      "passed": true,
+      "detail": "all low <= high"
+    },
+    {
+      "check": "paired confidence interval ordering",
+      "passed": true,
+      "detail": "all low <= high"
+    },
+    {
+      "check": "domain experts worsen future PCE MAE",
+      "passed": true,
+      "detail": [
+        {
+          "domain": "Sn-only",
+          "MAE_change_percent": 14.414626911903516,
+          "MAE_change_percent_CI_low": 7.9570192124494685,
+          "MAE_change_percent_CI_high": 22.067975224317397
+        },
+        {
+          "domain": "Mixed Pb-Sn",
+          "MAE_change_percent": 18.20945856581668,
+          "MAE_change_percent_CI_low": 7.545154928822312,
+          "MAE_change_percent_CI_high": 30.71404284307213
+        }
+      ]
+    },
+    {
+      "check": "PCE >=20 support classified descriptive",
+      "passed": true,
+      "detail": {
+        "Sn-only": 0,
+        "Mixed Pb-Sn": 2
+      }
+    },
+    {
+      "check": "bootstrap replicate count",
+      "passed": true,
+      "detail": 1000
+    },
+    {
+      "check": "future outcomes excluded from tuning",
+      "passed": true,
+      "detail": {
+        "development": "publication-disjoint OOF predictions from records published through 2018",
+        "final_test": "frozen chronological 2019-2021 holdout evaluated once",
+        "future_outcomes_used_for_tuning": false,
+        "DOI_overlap": 0
+      }
+    },
+    {
+      "check": "manifest prediction integrity",
+      "passed": true,
+      "detail": {
+        "rows": 5060,
+        "duplicates": 0
+      }
+    }
+  ]
+}

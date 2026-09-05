@@ -1,0 +1,213 @@
+{
+  "analysis": "Sn-only and mixed Pb-Sn subgroup calibration / mixture-of-experts",
+  "created_utc": "2026-08-29T01:50:01.724948+00:00",
+  "temporal_design": {
+    "development": "publication-disjoint OOF predictions from records published through 2018",
+    "final_test": "frozen chronological 2019-2021 holdout evaluated once",
+    "future_outcomes_used_for_tuning": false,
+    "DOI_overlap": 0
+  },
+  "bootstrap_replicates": 1000,
+  "seed": 20260829,
+  "global_model": "Frozen full 1/n_DOI weighted multi-output Random Forest",
+  "global_config": {
+    "row_random_folds": 5,
+    "grouped_folds": 5,
+    "temporal_cutoff_year": 2018,
+    "seed": 20260826,
+    "bootstrap_replicates": 1000,
+    "ohe_min_frequency": 10,
+    "ohe_max_categories": 256,
+    "token_min_df": 10,
+    "token_max_features": 2000,
+    "elastic_alpha": 0.01,
+    "elastic_l1_ratio": 0.1,
+    "elastic_max_iter": 10000,
+    "elastic_tolerance": 0.001,
+    "rf_estimators": 120,
+    "rf_max_features": 0.35,
+    "rf_min_samples_leaf": 2,
+    "rf_max_samples": 0.8
+  },
+  "selection_rule": "DOI-level one-standard-error rule, favoring stronger shrinkage / lower complexity",
+  "domains": {
+    "Sn-only": {
+      "historical_records": 389,
+      "historical_DOI": 83,
+      "future_records": 155,
+      "future_DOI": 30,
+      "selected_expert": "Expert conservative",
+      "selected_expert_config": {
+        "row_random_folds": 5,
+        "grouped_folds": 5,
+        "temporal_cutoff_year": 2018,
+        "seed": 20260826,
+        "bootstrap_replicates": 1000,
+        "ohe_min_frequency": 5,
+        "ohe_max_categories": 128,
+        "token_min_df": 5,
+        "token_max_features": 1000,
+        "elastic_alpha": 0.01,
+        "elastic_l1_ratio": 0.1,
+        "elastic_max_iter": 10000,
+        "elastic_tolerance": 0.001,
+        "rf_estimators": 200,
+        "rf_max_features": 0.35,
+        "rf_min_samples_leaf": 8,
+        "rf_max_samples": 0.85
+      },
+      "calibration_parameters": {
+        "PCE": {
+          "kind": "identity",
+          "ridge": null,
+          "x_center": 0.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "delta_intercept": 0.0,
+          "delta_slope": 0.0,
+          "candidate": "Identity"
+        },
+        "Voc": {
+          "kind": "identity",
+          "ridge": null,
+          "x_center": 0.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "delta_intercept": 0.0,
+          "delta_slope": 0.0,
+          "candidate": "Identity"
+        },
+        "Jsc": {
+          "kind": "identity",
+          "ridge": null,
+          "x_center": 0.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "delta_intercept": 0.0,
+          "delta_slope": 0.0,
+          "candidate": "Identity"
+        },
+        "FF": {
+          "kind": "identity",
+          "ridge": null,
+          "x_center": 0.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "delta_intercept": 0.0,
+          "delta_slope": 0.0,
+          "candidate": "Identity"
+        }
+      },
+      "selected_blend_alpha": {
+        "PCE": 0.0,
+        "Voc": 0.0,
+        "Jsc": 0.0,
+        "FF": 0.0
+      },
+      "selected_policy_method": {
+        "PCE": "Frozen global",
+        "Voc": "Frozen global",
+        "Jsc": "Frozen global",
+        "FF": "Frozen global"
+      }
+    },
+    "Mixed Pb-Sn": {
+      "historical_records": 274,
+      "historical_DOI": 57,
+      "future_records": 98,
+      "future_DOI": 25,
+      "selected_expert": "Expert conservative",
+      "selected_expert_config": {
+        "row_random_folds": 5,
+        "grouped_folds": 5,
+        "temporal_cutoff_year": 2018,
+        "seed": 20260826,
+        "bootstrap_replicates": 1000,
+        "ohe_min_frequency": 5,
+        "ohe_max_categories": 128,
+        "token_min_df": 5,
+        "token_max_features": 1000,
+        "elastic_alpha": 0.01,
+        "elastic_l1_ratio": 0.1,
+        "elastic_max_iter": 10000,
+        "elastic_tolerance": 0.001,
+        "rf_estimators": 200,
+        "rf_max_features": 0.35,
+        "rf_min_samples_leaf": 8,
+        "rf_max_samples": 0.85
+      },
+      "calibration_parameters": {
+        "PCE": {
+          "kind": "identity",
+          "ridge": null,
+          "x_center": 0.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "delta_intercept": 0.0,
+          "delta_slope": 0.0,
+          "candidate": "Identity"
+        },
+        "Voc": {
+          "kind": "identity",
+          "ridge": null,
+          "x_center": 0.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "delta_intercept": 0.0,
+          "delta_slope": 0.0,
+          "candidate": "Identity"
+        },
+        "Jsc": {
+          "kind": "identity",
+          "ridge": null,
+          "x_center": 0.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "delta_intercept": 0.0,
+          "delta_slope": 0.0,
+          "candidate": "Identity"
+        },
+        "FF": {
+          "kind": "identity",
+          "ridge": null,
+          "x_center": 0.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "delta_intercept": 0.0,
+          "delta_slope": 0.0,
+          "candidate": "Identity"
+        }
+      },
+      "selected_blend_alpha": {
+        "PCE": 0.0,
+        "Voc": 0.0,
+        "Jsc": 0.0,
+        "FF": 0.0
+      },
+      "selected_policy_method": {
+        "PCE": "Frozen global",
+        "Voc": "Frozen global",
+        "Jsc": "Frozen global",
+        "FF": "Frozen global"
+      }
+    }
+  },
+  "archive_outcome_max_abs_difference": 1.4210854715202004E-14,
+  "prediction_rows": 5060,
+  "duplicate_prediction_keys": 0,
+  "input_sha256": {
+    "raw": "9d30614b3a9228f2d66d4b09791e3210316fb717a17c11d3b70f18302ff074bb",
+    "cohort": "c8e637a7f6e2e47749642b313590377b0a6a4450f2a6519e04f1fbc9fc0f0bd6",
+    "assignments": "8a4682d038ae72dc40870f13cb4945ebebf3a567455219126acefc9bb376358b",
+    "composition_predictions": "69c3940e47263b7b0f085f41de9b6e40995177597e6c94cdee785ed9e838d1ca",
+    "split_manifest": "771d200195a14370a42d8f8ab7e1a39c712413e57858954b8103e3931f4ac330",
+    "weighting_predictions": "dabdcb101054798f6b26d858de6e30600d762f9c1cc736aaa02e7008da4bbe9a"
+  },
+  "software": {
+    "python": "3.12.13",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scikit_learn": "1.8.0"
+  },
+  "elapsed_seconds": 359.3470310769999
+}

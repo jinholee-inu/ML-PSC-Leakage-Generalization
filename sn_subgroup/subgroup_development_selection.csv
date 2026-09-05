@@ -1,0 +1,49 @@
+domain,selection_component,candidate,mean_DOI_MAE,SE_DOI_MAE,n_DOI,minimum_mean_plus_one_SE,within_one_SE,selected,selection_loss,target,method,historical_OOF_publication_balanced_MAE,MAE_ratio_to_global,domain_target
+Sn-only,expert hyperparameter,Expert conservative,0.5682066971974933,0.032688197426838775,83.0,0.5951085346387612,True,True,Mean DOI-balanced MAE / historical target IQR across four targets,,,,,
+Sn-only,expert hyperparameter,Expert moderate,0.5656704872104489,0.03195636031429602,83.0,0.5951085346387612,True,False,Mean DOI-balanced MAE / historical target IQR across four targets,,,,,
+Sn-only,expert hyperparameter,Expert frozen spec,0.5694779392110063,0.032794256584663506,83.0,0.5951085346387612,True,False,Mean DOI-balanced MAE / historical target IQR across four targets,,,,,
+Sn-only,expert hyperparameter,Expert flexible,0.5636115836505015,0.031496950988259734,83.0,0.5951085346387612,True,False,Mean DOI-balanced MAE / historical target IQR across four targets,,,,,
+Sn-only,method performance,,,,,,,,,PCE,Frozen global,1.9243965635903937,1.0,Sn-only | PCE
+Sn-only,method performance,,,,,,,,,PCE,Subgroup calibrator,1.9243965635903937,1.0,Sn-only | PCE
+Sn-only,method performance,,,,,,,,,PCE,Domain expert,1.9471072001310303,1.0118014327038003,Sn-only | PCE
+Sn-only,method performance,,,,,,,,,PCE,Convex mixture,1.9243965635903937,1.0,Sn-only | PCE
+Sn-only,method performance,,,,,,,,,PCE,Development-selected policy,1.9243965635903937,1.0,Sn-only | PCE
+Sn-only,method performance,,,,,,,,,Voc,Frozen global,0.13299713706186325,1.0,Sn-only | Voc
+Sn-only,method performance,,,,,,,,,Voc,Subgroup calibrator,0.13299713706186325,1.0,Sn-only | Voc
+Sn-only,method performance,,,,,,,,,Voc,Domain expert,0.14058675141493046,1.0570659979660835,Sn-only | Voc
+Sn-only,method performance,,,,,,,,,Voc,Convex mixture,0.13299713706186325,1.0,Sn-only | Voc
+Sn-only,method performance,,,,,,,,,Voc,Development-selected policy,0.13299713706186325,1.0,Sn-only | Voc
+Sn-only,method performance,,,,,,,,,Jsc,Frozen global,5.3727853058354125,1.0,Sn-only | Jsc
+Sn-only,method performance,,,,,,,,,Jsc,Subgroup calibrator,5.3727853058354125,1.0,Sn-only | Jsc
+Sn-only,method performance,,,,,,,,,Jsc,Domain expert,5.502108945933624,1.024070129874304,Sn-only | Jsc
+Sn-only,method performance,,,,,,,,,Jsc,Convex mixture,5.3727853058354125,1.0,Sn-only | Jsc
+Sn-only,method performance,,,,,,,,,Jsc,Development-selected policy,5.3727853058354125,1.0,Sn-only | Jsc
+Sn-only,method performance,,,,,,,,,FF,Frozen global,10.504691119450653,1.0,Sn-only | FF
+Sn-only,method performance,,,,,,,,,FF,Subgroup calibrator,10.504691119450653,1.0,Sn-only | FF
+Sn-only,method performance,,,,,,,,,FF,Domain expert,10.61696097166934,1.0106875919474496,Sn-only | FF
+Sn-only,method performance,,,,,,,,,FF,Convex mixture,10.504691119450653,1.0,Sn-only | FF
+Sn-only,method performance,,,,,,,,,FF,Development-selected policy,10.504691119450653,1.0,Sn-only | FF
+Mixed Pb-Sn,expert hyperparameter,Expert conservative,0.6160645389572381,0.04780192247935142,57.0,0.6349657533316333,True,True,Mean DOI-balanced MAE / historical target IQR across four targets,,,,,
+Mixed Pb-Sn,expert hyperparameter,Expert moderate,0.5965297198279469,0.04569157529733043,57.0,0.6349657533316333,True,False,Mean DOI-balanced MAE / historical target IQR across four targets,,,,,
+Mixed Pb-Sn,expert hyperparameter,Expert frozen spec,0.5887845073047331,0.04618124602690026,57.0,0.6349657533316333,True,False,Mean DOI-balanced MAE / historical target IQR across four targets,,,,,
+Mixed Pb-Sn,expert hyperparameter,Expert flexible,0.5948061872999567,0.0460972841498871,57.0,0.6349657533316333,True,False,Mean DOI-balanced MAE / historical target IQR across four targets,,,,,
+Mixed Pb-Sn,method performance,,,,,,,,,PCE,Frozen global,2.775642005088757,1.0,Mixed Pb-Sn | PCE
+Mixed Pb-Sn,method performance,,,,,,,,,PCE,Subgroup calibrator,2.775642005088757,1.0,Mixed Pb-Sn | PCE
+Mixed Pb-Sn,method performance,,,,,,,,,PCE,Domain expert,2.9178293425911197,1.0512268286910496,Mixed Pb-Sn | PCE
+Mixed Pb-Sn,method performance,,,,,,,,,PCE,Convex mixture,2.775642005088757,1.0,Mixed Pb-Sn | PCE
+Mixed Pb-Sn,method performance,,,,,,,,,PCE,Development-selected policy,2.775642005088757,1.0,Mixed Pb-Sn | PCE
+Mixed Pb-Sn,method performance,,,,,,,,,Voc,Frozen global,0.12432451879673681,1.0,Mixed Pb-Sn | Voc
+Mixed Pb-Sn,method performance,,,,,,,,,Voc,Subgroup calibrator,0.12432451879673681,1.0,Mixed Pb-Sn | Voc
+Mixed Pb-Sn,method performance,,,,,,,,,Voc,Domain expert,0.12270813203998758,0.986998648598094,Mixed Pb-Sn | Voc
+Mixed Pb-Sn,method performance,,,,,,,,,Voc,Convex mixture,0.12432451879673681,1.0,Mixed Pb-Sn | Voc
+Mixed Pb-Sn,method performance,,,,,,,,,Voc,Development-selected policy,0.12432451879673681,1.0,Mixed Pb-Sn | Voc
+Mixed Pb-Sn,method performance,,,,,,,,,Jsc,Frozen global,3.961194867113727,1.0,Mixed Pb-Sn | Jsc
+Mixed Pb-Sn,method performance,,,,,,,,,Jsc,Subgroup calibrator,3.961194867113727,1.0,Mixed Pb-Sn | Jsc
+Mixed Pb-Sn,method performance,,,,,,,,,Jsc,Domain expert,4.2147745162291175,1.0640159491320753,Mixed Pb-Sn | Jsc
+Mixed Pb-Sn,method performance,,,,,,,,,Jsc,Convex mixture,3.961194867113727,1.0,Mixed Pb-Sn | Jsc
+Mixed Pb-Sn,method performance,,,,,,,,,Jsc,Development-selected policy,3.961194867113727,1.0,Mixed Pb-Sn | Jsc
+Mixed Pb-Sn,method performance,,,,,,,,,FF,Frozen global,7.305892613592672,1.0,Mixed Pb-Sn | FF
+Mixed Pb-Sn,method performance,,,,,,,,,FF,Subgroup calibrator,7.305892613592672,1.0,Mixed Pb-Sn | FF
+Mixed Pb-Sn,method performance,,,,,,,,,FF,Domain expert,6.953144251906768,0.9517172807837865,Mixed Pb-Sn | FF
+Mixed Pb-Sn,method performance,,,,,,,,,FF,Convex mixture,7.305892613592672,1.0,Mixed Pb-Sn | FF
+Mixed Pb-Sn,method performance,,,,,,,,,FF,Development-selected policy,7.305892613592672,1.0,Mixed Pb-Sn | FF
