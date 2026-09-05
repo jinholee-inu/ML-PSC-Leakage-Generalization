@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "records": 33175,
+  "DOI_groups": 6368,
+  "raw_sha256_matches_frozen": true,
+  "cohort_sha256_matches_frozen": true,
+  "forbidden_features_absent": true,
+  "duplicate_prediction_keys": 0,
+  "nonfinite_prediction_values": 0,
+  "grouped_DOI_overlap": 0,
+  "chronological_DOI_overlap": 0,
+  "selected_RF_lambda": 0.0,
+  "selected_CatBoost_lambda": 0.025,
+  "rolling_years": [
+    2016,
+    2017,
+    2018
+  ],
+  "2019_2021_holdout_used_for_lambda_selection": false,
+  "prediction_rows": 411256
+}
