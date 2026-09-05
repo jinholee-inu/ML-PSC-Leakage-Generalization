@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "runtime_seconds": 7.102720022201538,
+  "software": {
+    "python": "3.12.13",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  },
+  "inputs": {
+    "predictions_path": "/workspace/scratch/1d2940d5fcd3/outputs/psc-composition-domain-audit/composition_domain_predictions.csv.gz",
+    "predictions_sha256": "69c3940e47263b7b0f085f41de9b6e40995177597e6c94cdee785ed9e838d1ca",
+    "support_path": "/workspace/scratch/1d2940d5fcd3/outputs/psc-composition-domain-audit/composition_domain_support.csv",
+    "support_sha256": "3ae8a27215fee9822924b7d219dcdc4bd31312860993131bf447548d1577e80e",
+    "calibration_path": "/workspace/scratch/1d2940d5fcd3/outputs/psc-uncertainty-ood/uncertainty_calibration_diagnostics.csv",
+    "calibration_sha256": "7142627c4be1e42b174a3ec532e17bb07dd26af5273965b24d2602ee0aa79874"
+  },
+  "design": {
+    "model_retrained": false,
+    "future_cohort": "2019-2021",
+    "subgroup": "mixed Pb-Sn",
+    "mixed_historical_DOI": 57,
+    "primary_evaluation": "publication-balanced",
+    "thresholds_locked_without_future_outcomes": true,
+    "future_outcomes_role": "evaluation only",
+    "domain_established_DOI": 100,
+    "cell_sparse_DOI": 10,
+    "cell_critical_DOI": 5,
+    "OOD_moderate": 0.9,
+    "OOD_critical": 0.95,
+    "uncertainty_moderate_multiplier": 1.5,
+    "uncertainty_critical_multiplier": 2.5,
+    "large_error_thresholds": {
+      "PCE": 4.0,
+      "Voc": 0.1,
+      "Jsc": 4.0,
+      "FF": 10.0
+    },
+    "minimum_descriptive_DOI": 5,
+    "minimum_inferential_DOI": 20,
+    "bootstrap_replicates": 1000,
+    "seed": 20260829
+  },
+  "verification": {
+    "status": "passed",
+    "prediction_rows": 392,
+    "expected_prediction_rows": 392,
+    "records": 98,
+    "DOI_groups": 25,
+    "duplicate_prediction_keys": 0,
+    "targets": [
+      "FF",
+      "Jsc",
+      "PCE",
+      "Voc"
+    ],
+    "warning_tiers_present": [
+      "Amber",
+      "Red"
+    ],
+    "missing_policy_values": 0,
+    "bootstrap_replicates": 1000,
+    "bootstrap_row_sums_valid": true,
+    "future_outcomes_used_for_thresholds": false,
+    "all_mixed_pb_sn_minimum_amber": true,
+    "calibrated_floor_half_widths": {
+      "PCE": 4.224763059872039,
+      "Voc": 0.0947790420395188,
+      "Jsc": 3.0734773881641284,
+      "FF": 10.834657670209095
+    },
+    "figure_files_present": true
+  }
+}

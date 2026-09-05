@@ -1,0 +1,7 @@
+component,Green,Amber,Red,locked_source,current_value
+Mixed Pb-Sn domain support,>=100 historical DOI,10-99 historical DOI,<10 historical DOI,historical training metadata,57
+A x B composition-cell support,>=10 historical DOI,5-9 historical DOI,<5 historical DOI,historical training metadata,record-specific
+Exact short-form composition,seen historically,not used,unseen historically,historical composition vocabulary,record-specific
+Feature-space OOD percentile,<0.90,0.90-<0.95,>=0.95,training-partition prototype distances,record-specific
+Model-support OOD percentile,<0.90,0.90-<0.95,>=0.95,training-partition RF leaf support,record-specific
+95% interval half-width / calibrated floor,<1.5x,1.5-<2.5x,>=2.5x,2018 DOI-disjoint calibration partition,target- and record-specific

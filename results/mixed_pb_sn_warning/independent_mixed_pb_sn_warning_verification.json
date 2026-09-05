@@ -1,0 +1,216 @@
+{
+  "status": "PASS",
+  "checks_passed": 24,
+  "checks_total": 24,
+  "checks": [
+    {
+      "check": "required outputs exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "assignment row count",
+      "passed": true,
+      "detail": 392
+    },
+    {
+      "check": "record and DOI support",
+      "passed": true,
+      "detail": {
+        "records": 98,
+        "DOI": 25
+      }
+    },
+    {
+      "check": "prediction key uniqueness",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "target set",
+      "passed": true,
+      "detail": [
+        "FF",
+        "Jsc",
+        "PCE",
+        "Voc"
+      ]
+    },
+    {
+      "check": "mixed Pb-Sn subset only",
+      "passed": true,
+      "detail": {
+        "Pb+Sn": 392
+      }
+    },
+    {
+      "check": "frozen prediction and diagnostic identity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "check": "mixed historical support",
+      "passed": true,
+      "detail": 57
+    },
+    {
+      "check": "composition-cell support mapping",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "calibration-floor identity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "check": "uncertainty-multiplier identity",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "check": "independent tier recomputation",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "Green gate closed",
+      "passed": true,
+      "detail": {
+        "Red": 254,
+        "Amber": 138
+      }
+    },
+    {
+      "check": "target-specific Red counts",
+      "passed": true,
+      "detail": {
+        "FF": 45,
+        "Jsc": 91,
+        "PCE": 46,
+        "Voc": 72
+      }
+    },
+    {
+      "check": "metric recomputation",
+      "passed": true,
+      "detail": 3.552713678800501e-15
+    },
+    {
+      "check": "metric CI ordering",
+      "passed": true,
+      "detail": "all low <= high"
+    },
+    {
+      "check": "comparison CI ordering",
+      "passed": true,
+      "detail": "all low <= high"
+    },
+    {
+      "check": "Jsc and FF Red MAE enrichment",
+      "passed": true,
+      "detail": {
+        "PCE": {
+          "MAE_ratio_Red_over_Amber": 1.206505085085818,
+          "MAE_ratio_CI_low": 0.8089686396289945,
+          "MAE_ratio_CI_high": 1.8527578692134945
+        },
+        "Voc": {
+          "MAE_ratio_Red_over_Amber": 1.74750587985717,
+          "MAE_ratio_CI_low": 0.8683197647333569,
+          "MAE_ratio_CI_high": 4.3943788052078645
+        },
+        "Jsc": {
+          "MAE_ratio_Red_over_Amber": 2.0105513621319666,
+          "MAE_ratio_CI_low": 1.1798748974218618,
+          "MAE_ratio_CI_high": 4.100942238004422
+        },
+        "FF": {
+          "MAE_ratio_Red_over_Amber": 1.5182932949275147,
+          "MAE_ratio_CI_low": 1.071547790941715,
+          "MAE_ratio_CI_high": 2.140357710159521
+        }
+      }
+    },
+    {
+      "check": "PCE comparison classified descriptive",
+      "passed": true,
+      "detail": {
+        "Amber_DOI": 13,
+        "Red_DOI": 16
+      }
+    },
+    {
+      "check": "exact-formula novelty count",
+      "passed": true,
+      "detail": {
+        "PCE": 34,
+        "Voc": 34,
+        "Jsc": 34,
+        "FF": 34
+      }
+    },
+    {
+      "check": "model-support P95 non-trigger in this cohort",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "one locked primary sensitivity row per target",
+      "passed": true,
+      "detail": [
+        {
+          "variant": "Primary (locked)",
+          "target": "PCE"
+        },
+        {
+          "variant": "Primary (locked)",
+          "target": "Voc"
+        },
+        {
+          "variant": "Primary (locked)",
+          "target": "Jsc"
+        },
+        {
+          "variant": "Primary (locked)",
+          "target": "FF"
+        }
+      ]
+    },
+    {
+      "check": "future outcomes excluded from threshold setting",
+      "passed": true,
+      "detail": {
+        "model_retrained": false,
+        "future_cohort": "2019-2021",
+        "subgroup": "mixed Pb-Sn",
+        "mixed_historical_DOI": 57,
+        "primary_evaluation": "publication-balanced",
+        "thresholds_locked_without_future_outcomes": true,
+        "future_outcomes_role": "evaluation only",
+        "domain_established_DOI": 100,
+        "cell_sparse_DOI": 10,
+        "cell_critical_DOI": 5,
+        "OOD_moderate": 0.9,
+        "OOD_critical": 0.95,
+        "uncertainty_moderate_multiplier": 1.5,
+        "uncertainty_critical_multiplier": 2.5,
+        "large_error_thresholds": {
+          "PCE": 4.0,
+          "Voc": 0.1,
+          "Jsc": 4.0,
+          "FF": 10.0
+        },
+        "minimum_descriptive_DOI": 5,
+        "minimum_inferential_DOI": 20,
+        "bootstrap_replicates": 1000,
+        "seed": 20260829
+      }
+    },
+    {
+      "check": "bootstrap replicate count",
+      "passed": true,
+      "detail": 1000
+    }
+  ]
+}
