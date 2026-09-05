@@ -1,0 +1,9 @@
+# Versions recorded in the archived subgroup run manifest
+numpy==2.3.5
+pandas==2.2.3
+scikit-learn==1.8.0
+
+# Imported by the analysis script; exact archived versions were not recorded
+scipy
+matplotlib
+seaborn
