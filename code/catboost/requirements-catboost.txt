@@ -1,0 +1,11 @@
+# Versions explicitly recorded in the archived CatBoost point-model run manifest
+numpy==2.3.5
+pandas==2.2.3
+scikit-learn==1.8.0
+catboost==1.2.10
+
+# Additional packages imported by the recovered CatBoost analysis scripts.
+# Exact archived versions were not recorded in the point-model manifest.
+scipy
+matplotlib
+seaborn
