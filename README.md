@@ -5,62 +5,43 @@ configuration files, and selected machine-readable outputs supporting the manusc
 
 **Publication Leakage and Temporal Generalization in Machine Learning for Perovskite Solar Cells**
 
-The study evaluates how publication-level dependence, chronological distribution shift,
-publication-balanced training, predictive uncertainty, and composition-domain support affect
-claims of generalization in literature-derived perovskite solar-cell machine learning.
-
 ## Repository structure
 
 ```text
 ML-PSC-Leakage-Generalization/
-├── data/                  # frozen cohort index, validation splits, and provenance
-├── code/                  # baseline, DOI-weighting, and CatBoost analysis scripts
-├── config/                # frozen CatBoost model-selection and run manifests
-├── results/               # selected frozen machine-readable outputs
-└── uncertainty_rf/        # recovered Random-Forest uncertainty/OOD dependency
+├── data/
+├── code/
+│   ├── catboost/
+│   └── reliability/
+│       └── composition_domain/
+├── config/
+├── results/
+│   ├── catboost_recency/
+│   └── composition_domain/
+└── uncertainty_rf/
 ```
 
-## Data
+## Recovered analysis chain
 
-The analysis uses the frozen **31 March 2022** snapshot of the public Perovskite Database Project.
+The repository currently contains source code and frozen inputs/outputs for:
 
-The raw database CSV is not redistributed here. The repository provides the final
-33,175-record cohort index, normalized DOI-group assignments, frozen validation assignments,
-data-audit counts, and SHA-256 provenance information.
-
-See `data/README.md`.
-
-## Analysis code currently recovered
-
-- baseline Elastic Net and Random Forest validation;
-- row-wise versus DOI-grouped publication-leakage analysis;
-- chronological validation;
+- baseline Elastic Net and Random-Forest validation;
+- publication-leakage analysis;
 - DOI-balanced sample weighting;
-- CatBoost training-only model selection and temporal-recency analysis;
-- CatBoost uncertainty analysis;
-- held-out SHAP and ALE analysis;
-- hierarchical within-family attribution; and
-- RF–CatBoost robustness comparison.
+- Random-Forest uncertainty and OOD analysis;
+- CatBoost point-model and temporal-recency analysis;
+- CatBoost uncertainty;
+- held-out SHAP and ALE;
+- hierarchical within-family attribution;
+- RF–CatBoost robustness comparison; and
+- locked composition-domain reliability analysis.
 
-The original RF uncertainty/OOD helper package required by the CatBoost uncertainty analysis
-is also included.
+## Remaining reliability analyses
 
-## Frozen outputs
+The remaining manuscript-specific source packages to add are:
 
-`results/catboost_recency/` contains the original CatBoost point-model / recency prediction
-table and compact audit summaries used by downstream CatBoost analyses.
+1. Sn-only / mixed Pb–Sn subgroup calibration and mixture-of-experts analysis; and
+2. the mixed Pb–Sn warning-policy analysis.
 
-## Remaining manuscript-specific code
-
-Before the final archived release, the repository should also include the locked
-composition-domain, Sn-subgroup / mixture-of-experts, and mixed Pb–Sn warning-policy
-analyses, together with the final selected result tables needed by the data-availability statement.
-
-## Citation
-
-A manuscript citation and persistent archived DOI will be added with the final release.
-
-## Contact
-
-Soonil Hong — Korea Research Institute of Chemical Technology  
-Jinho Lee — Incheon National University
+After those packages are added, the repository can be given a final manuscript-to-code audit
+and prepared for a versioned archival release / persistent DOI.
