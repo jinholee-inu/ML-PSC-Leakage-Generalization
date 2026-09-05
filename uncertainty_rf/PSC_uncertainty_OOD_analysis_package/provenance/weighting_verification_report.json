@@ -1,0 +1,80 @@
+{
+  "prediction_rows": 1522476,
+  "duplicate_prediction_keys": 0,
+  "coverage_groups_checked": 72,
+  "target_consistency_max_unique_values": 1,
+  "frozen_unweighted_rows": 507492,
+  "frozen_y_true_max_abs_difference": 0.0,
+  "frozen_prediction_max_abs_difference": 0.0,
+  "grouped_max_folds_per_DOI": 1,
+  "chronological_train_test_DOI_overlap": 0,
+  "metric_recalculation_max_abs_difference": 3.552713678800501e-15,
+  "paired_effect_recalculation_max_abs_difference": 2.3071822230491534e-16,
+  "calibration_recalculation_max_abs_difference": 3.552713678800501e-15,
+  "high_PCE_records": 529,
+  "high_PCE_DOI_groups": 260,
+  "high_efficiency_recalculation_max_abs_difference": 8.881784197001252e-16,
+  "fit_warning_rows": 0,
+  "sample_weight_mean_max_abs_difference_from_one": 0.0,
+  "full_inverse_DOI_total_weight_CV_max": 1.6821483486032628e-16,
+  "output_files": {
+    "publication_weighting_metrics.csv": {
+      "bytes": 37479,
+      "sha256": "d416f14f53b140e8a24590b3be101f2940329b5ddb46cf3cd4685e91e2e6bfce"
+    },
+    "publication_weighting_paired_comparison.csv": {
+      "bytes": 26653,
+      "sha256": "cf3039699c8655c6d0b7515116dbcff46c65832240adbb0428f8f7f5713b9f21"
+    },
+    "weighting_performance_by_DOI_size.csv": {
+      "bytes": 101126,
+      "sha256": "c9d3d135133b071f80efcc068f23ec403bed95525ca961c963a4a73562b7ee2f"
+    },
+    "chronological_PCE_weighting_calibration.csv": {
+      "bytes": 30859,
+      "sha256": "3e2b2f22b58c53c95ac19b7be620e3b87eee7f9801363b10898d87900c4a12be"
+    },
+    "chronological_PCE_high_efficiency_paired_comparison.csv": {
+      "bytes": 5825,
+      "sha256": "6682dbb5f1be5f5f288392af1737f045cf61b321ce0f9ab7fdd07239955d6ec2"
+    },
+    "DOI_size_distribution.csv": {
+      "bytes": 422,
+      "sha256": "f425faeaf1e1ad6709d8af387f98cd67dd13ce7beb1a6242306d08b0e621b8e3"
+    },
+    "publication_weighting_predictions.csv.gz": {
+      "bytes": 26431895,
+      "sha256": "dabdcb101054798f6b26d858de6e30600d762f9c1cc736aaa02e7008da4bbe9a"
+    },
+    "training_weight_diagnostics.csv": {
+      "bytes": 8712,
+      "sha256": "5af27eec808a91cd067e8768e5850eb3eceb56276a512f4812858cee77663da1"
+    },
+    "Figure4_DOI_balanced_weighting.png": {
+      "bytes": 1221498,
+      "sha256": "52347b517f80f40c9b9988d9b7660d4c2ffb3b66c098fa3c66d3d9299ce37a00"
+    },
+    "Figure4_DOI_balanced_weighting.pdf": {
+      "bytes": 45726,
+      "sha256": "455803d35ecc1cf950c40dae35b07762c201393563563a2fbfc33f397072af40"
+    },
+    "Figure4_DOI_balanced_weighting.svg": {
+      "bytes": 174539,
+      "sha256": "b21c2a349847a3c23361ec87c5721c768eddb6de7af620f2b424f78f9258004b"
+    },
+    "weighting_run_manifest.json": {
+      "bytes": 2023,
+      "sha256": "bd1fc46022abfe819582e832f24a76c0058623d4f732fac04bd45e27f0ec092b"
+    }
+  },
+  "status": "passed",
+  "weighting_conditions": [
+    "Unweighted",
+    "Tempered 1/sqrt(n_DOI)",
+    "Full 1/n_DOI"
+  ],
+  "evaluation_lenses": [
+    "Device-level",
+    "Publication-balanced"
+  ]
+}

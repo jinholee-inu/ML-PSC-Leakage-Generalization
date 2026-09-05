@@ -1,0 +1,15 @@
+{
+  "code/doi_balanced_weighting.py": "9ad5e63276ec1310553fa157a73a7a8b2aa231f67626d6509f011ca43e186ec5",
+  "code/psc_baseline_validation.py": "816490a1f67f6d783eebecdcb90bfabc378f88934787a7a51d9ec3883e1e9445",
+  "code/uncertainty_ood_analysis.py": "439cc86eab14342bba4363dc191c68b0c2d0260b9719429334d7f63765e3950d",
+  "code/verify_uncertainty_ood_results.py": "7a3367a450270034c2d2a356c6c03c6c0ca3d2e7429a7c8153be0a731d1c34ec",
+  "code/verify_weighting_results.py": "e3fc0570db5b90ebfdf97560a510d3ddc373a2e94e657bd310a9d2c00d405b91",
+  "licenses/Perovskite_PI_LICENSE": "cacaff091ac59520f1f6558761d9f2e97a839a85cf1363fcdf1001bac576225d",
+  "provenance/baseline_run_manifest.json": "97c9b7c3a534c7c1762e7e643f996dab5c2ee412e02475c1b68ac640f670be66",
+  "provenance/independent_verification_report.json": "517e7b0de01917514161e009099c7e4c687d6331ac8ec96f0e5011e283955195",
+  "provenance/uncertainty_ood_run_manifest.json": "c7939ba0db72204b465bb41fa96781637cc2730a4aea74644c86efb674ce03cd",
+  "provenance/uncertainty_ood_verification_report.json": "9993ccf378cf96623e62fb1a88675d254ea4a9fb8554e24f147796e0f635e09c",
+  "provenance/weighting_run_manifest.json": "bd1fc46022abfe819582e832f24a76c0058623d4f732fac04bd45e27f0ec092b",
+  "provenance/weighting_verification_report.json": "0a1cf9a4f81530cc935f1bac014811dc5f20609c387b560eb738de7a70873d1b",
+  "requirements.txt": "bcb5e943b10c824b292d60898b2fda8a5020856d65a5e28c230bca9933762adc"
+}

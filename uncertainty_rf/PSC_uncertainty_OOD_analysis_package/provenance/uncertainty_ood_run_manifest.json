@@ -1,0 +1,60 @@
+{
+  "status": "completed",
+  "runtime_seconds": 255.051227702,
+  "software": {
+    "python": "3.12.13",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  },
+  "inputs": {
+    "raw_sha256": "9d30614b3a9228f2d66d4b09791e3210316fb717a17c11d3b70f18302ff074bb",
+    "cohort_sha256": "c8e637a7f6e2e47749642b313590377b0a6a4450f2a6519e04f1fbc9fc0f0bd6",
+    "split_manifest_sha256": "771d200195a14370a42d8f8ab7e1a39c712413e57858954b8103e3931f4ac330",
+    "archived_weighting_predictions_sha256": "dabdcb101054798f6b26d858de6e30600d762f9c1cc736aaa02e7008da4bbe9a"
+  },
+  "model": {
+    "training_weighting": "Full 1/n_DOI",
+    "model": "Random Forest",
+    "estimators": 120,
+    "max_features": 0.35,
+    "min_samples_leaf": 2,
+    "max_samples": 0.8
+  },
+  "uncertainty": {
+    "raw_measure": "between-tree standard deviation",
+    "calibration": "DOI-balanced normalized residual quantiles on DOI-disjoint inner partitions",
+    "nominal_levels": [
+      0.9,
+      0.95
+    ]
+  },
+  "ood": {
+    "target_free": true,
+    "components": 32,
+    "prototype_clusters": 160,
+    "score": "nearest-prototype distance percentile relative to training partition"
+  },
+  "verification": {
+    "status": "passed",
+    "prediction_rows": 169164,
+    "expected_prediction_rows": 169164,
+    "duplicate_prediction_keys": 0,
+    "max_archived_prediction_difference": 1.4210854715202004e-14,
+    "max_tree_mean_difference": 1.3322676295501878e-15,
+    "grouped_boundary_DOI_overlap": 0,
+    "chronological_boundary_DOI_overlap": 0,
+    "bootstrap_replicates": 1000,
+    "interval_bounds_finite": true,
+    "interval_order_valid": true,
+    "feature_ood_percentile_range": [
+      0.0,
+      1.0
+    ],
+    "model_ood_percentile_range": [
+      7.53494329955167e-05,
+      0.9882454884526994
+    ]
+  }
+}

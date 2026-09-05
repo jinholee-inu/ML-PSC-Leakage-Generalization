@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "prediction_rows": 169164,
+  "expected_prediction_rows": 169164,
+  "duplicate_prediction_keys": 0,
+  "max_archived_prediction_difference": 1.4210854715202004e-14,
+  "max_tree_mean_difference": 1.3322676295501878e-15,
+  "grouped_boundary_DOI_overlap": 0,
+  "chronological_boundary_DOI_overlap": 0,
+  "bootstrap_replicates": 1000,
+  "interval_bounds_finite": true,
+  "interval_order_valid": true,
+  "feature_ood_percentile_range": [
+    0.0,
+    1.0
+  ],
+  "model_ood_percentile_range": [
+    7.53494329955167e-05,
+    0.9882454884526994
+  ]
+}

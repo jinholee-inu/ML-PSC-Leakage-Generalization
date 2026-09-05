@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "prediction_rows": 169164,
+  "duplicate_prediction_keys": 0,
+  "max_target_difference_from_archive": 0.0,
+  "max_prediction_difference_from_archive": 1.4210854715202004e-14,
+  "max_metric_recalculation_difference": 7.105427357601002e-15,
+  "interval_order_valid": true,
+  "finite_numeric_outputs": true
+}

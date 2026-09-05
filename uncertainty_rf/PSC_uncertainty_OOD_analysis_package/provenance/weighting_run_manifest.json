@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "runtime_seconds": 364.4280166199999,
+  "software": {
+    "python": "3.12.13",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  },
+  "inputs": {
+    "raw_path": "/workspace/scratch/1d2940d5fcd3/Perovskite_PI/data/raw/Perovskite_database_content_all_data.csv",
+    "raw_sha256": "9d30614b3a9228f2d66d4b09791e3210316fb717a17c11d3b70f18302ff074bb",
+    "cohort_path": "/workspace/psc-feasibility-audit/results/final_cohort_index.csv",
+    "cohort_sha256": "c8e637a7f6e2e47749642b313590377b0a6a4450f2a6519e04f1fbc9fc0f0bd6",
+    "baseline_results_dir": "/workspace/scratch/1d2940d5fcd3/psc-baseline-validation/results"
+  },
+  "config": {
+    "row_random_folds": 5,
+    "grouped_folds": 5,
+    "temporal_cutoff_year": 2018,
+    "seed": 20260826,
+    "bootstrap_replicates": 1000,
+    "ohe_min_frequency": 10,
+    "ohe_max_categories": 256,
+    "token_min_df": 10,
+    "token_max_features": 2000,
+    "elastic_alpha": 0.01,
+    "elastic_l1_ratio": 0.1,
+    "elastic_max_iter": 10000,
+    "elastic_tolerance": 0.001,
+    "rf_estimators": 120,
+    "rf_max_features": 0.35,
+    "rf_min_samples_leaf": 2,
+    "rf_max_samples": 0.8
+  },
+  "weighting_definitions": {
+    "Unweighted": "w_i = 1 (frozen baseline)",
+    "Tempered 1/sqrt(n_DOI)": "w_i proportional to n_DOI^(-1/2), normalized to mean 1 in training",
+    "Full 1/n_DOI": "w_i proportional to n_DOI^(-1), normalized to mean 1 in training"
+  },
+  "evaluation_definitions": {
+    "Device-level": "each device record receives equal evaluation weight",
+    "Publication-balanced": "each DOI receives equal total evaluation weight"
+  },
+  "frozen_unweighted_predictions_reused": true,
+  "records": 33175,
+  "DOI_groups": 6368,
+  "prediction_rows": 1522476,
+  "models": [
+    "Dummy mean",
+    "Elastic Net",
+    "Random Forest"
+  ],
+  "targets": [
+    "PCE",
+    "Voc",
+    "Jsc",
+    "FF"
+  ],
+  "schemes": [
+    "DOI-grouped 5-fold",
+    "Chronological >2018"
+  ]
+}
